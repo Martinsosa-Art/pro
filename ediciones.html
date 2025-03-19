@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ediciones Especiales de Ferrari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #e60000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .car-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 10%;
+        }
+
+        .car {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .car:hover {
+            transform: scale(1.05);
+        }
+
+        .car img {
+            width: 100%;
+            height: auto;
+        }
+
+        .car-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .car-info h3 {
+            font-size: 1.8em;
+            color: #e60000;
+            margin: 10px 0;
+        }
+
+        .car-info p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .car-info .price {
+            font-size: 1.4em;
+            color: #e60000;
+            font-weight: bold;
+        }
+
+        .car-section .car {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ediciones Más Especiales de Ferrari</h1>
+    </header>
+
+    <section class="car-section">
+        <div class="car">
+            <img src="OIP (700).jpg" alt="Ferrari 812 Competizione">
+            <div class="car-info">
+                <h3>Ferrari 812 Competizione</h3>
+                <p>La versión más extrema del Ferrari 812 Superfast, con un motor V12 que alcanza los 830 caballos de fuerza.</p>
+                <p class="price">$500,000 USD</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="descarga (800).jpg" alt="Ferrari SF90 Stradale">
+            <div class="car-info">
+                <h3>Ferrari SF90 Stradale</h3>
+                <p>Un superdeportivo híbrido con 1,000 caballos de fuerza y tecnología de vanguardia.</p>
+                <p class="price">$600,000 USD</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="descarga (900).jpg" alt="Ferrari LaFerrari">
+            <div class="car-info">
+                <h3>Ferrari LaFerrari</h3>
+                <p>Una de las ediciones más exclusivas de Ferrari, con un motor híbrido V12 que entrega 950 caballos de fuerza.</p>
+                <p class="price">$1,500,000 USD</p>
+            </div>
+        </div>
+
+        <div class="car">
+            <img src="descarga (1000).jpg" alt="Ferrari 488 Pista">
+            <div class="car-info">
+                <h3>Ferrari 488 Pista</h3>
+                <p>Un homenaje a la pista, con un motor V8 turboalimentado que produce 710 caballos de fuerza.</p>
+                <p class="price">$350,000 USD</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ferrari. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

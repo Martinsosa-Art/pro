@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari - Lo más nuevo</title>
+    <style>
+        /* Diseño general */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        header {
+            background: #e30613; /* Rojo Ferrari */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Sección del modelo Ferrari */
+        .model-section {
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .car-image {
+            max-width: 100%;
+            height: auto;
+            animation: slideUp 2s ease-out;
+        }
+
+        .description {
+            font-size: 1.2rem;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .cta-button {
+            background-color: #e30613;
+            color: white;
+            padding: 15px 25px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background-color: #c40211;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Ferrari - Lo más nuevo</h1>
+    </header>
+
+    <!-- Sección del Modelo Ferrari -->
+    <section class="model-section">
+        <h2>Nuevo Ferrari SF90 Stradale</h2>
+        <img src= "th 67.jpg" alt="Ferrari SF90" class="car-image">
+        <p class="description">El Ferrari SF90 Stradale es el modelo más avanzado de Ferrari hasta la fecha, con un motor híbrido de 1,000 CV, tracción total y una velocidad máxima de 340 km/h. ¡Prepárate para la experiencia definitiva de conducción!</p>
+        <a href="SF90.html">Descubre más</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Ferrari. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
