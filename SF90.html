@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferrari SF90</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-top: 20px;
+      color: #ff2d00;
+      animation: slideIn 1.5s ease-out;
+    }
+
+    .content {
+      margin: 30px;
+    }
+
+    .content p {
+      font-size: 20px;
+      line-height: 1.6;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .point {
+      background-color: #ff2d00;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 18px;
+      display: inline-block;
+      width: 250px;
+      margin-bottom: 15px;
+      opacity: 0;
+      animation: fadeInPoint 1s forwards;
+    }
+
+    .point:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+
+    .point:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    .point:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+
+    .point:nth-child(4) {
+      animation-delay: 2s;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      0% { transform: translateX(-100%); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInPoint {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Ferrari SF90</h1>
+
+  <div class="content">
+    <p>El Ferrari SF90 es el modelo más potente y avanzado de Ferrari, un superdeportivo híbrido que ha redefinido la marca.</p>
+    
+    <div class="point">Motor V8 Twin-Turbo de 780 CV</div>
+    <div class="point">Tracción total con 3 motores eléctricos</div>
+    <div class="point">Aceleración de 0 a 100 km/h en 2.5 segundos</div>
+    <div class="point">Autonomía eléctrica de hasta 25 km</div>
+  </div>
+
+</body>
+</html>

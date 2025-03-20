@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisitos para tener un Ferrari</title>
+    <style>
+        /* Estilo base para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            background-color: #C8102E;
+            color: white;
+            text-align: center;
+            padding: 50px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Animación para el encabezado */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Estilo para el contenido principal */
+        .content {
+            padding: 20px;
+        }
+
+        .section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease-out;
+        }
+
+        /* Animación para las secciones */
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h2 {
+            color: #C8102E;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li::before {
+            content: '✔️';
+            position: absolute;
+            left: 0;
+            color: #C8102E;
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: #C8102E;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+            animation: fadeIn 3s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Requisitos para Tener un Ferrari
+</header>
+
+<div class="content">
+    <div class="section">
+        <h2>1. Requisitos Financieros</h2>
+        <ul>
+            <li> Debes tener un ingreso alto o un patrimonio considerable.</li>
+            <li> El costo de un Ferrari varía, pero generalmente ronda entre los $200,000 y $400,000 USD.</li>
+            <li> Además de la compra, es importante considerar los gastos de mantenimiento.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2> 2. Requisitos Legales</h2>
+        <ul>
+            <li> Necesitas tener una licencia de conducir válida.</li>
+            <li> El coche debe estar registrado en tu país y asegurado.</li>
+            <li> Algunos países requieren impuestos especiales para autos de lujo.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>3. Requisitos de Estilo de Vida</h2>
+        <ul>
+            <li>Es importante tener un estilo de vida que coincida con la imagen de Ferrari.</li>
+            <li>Ser un amante del automovilismo y la ingeniería avanzada es una gran ventaja.</li>
+            <li>La elegancia y el gusto por el lujo son fundamentales.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>4. Cuidado y Mantenimiento</h2>
+        <ul>
+            <li>El mantenimiento de un Ferrari es costoso, por lo que se debe estar preparado para ello.</li>
+            <li>Requiere de cuidados especiales, como cambios de aceite y revisiones periódicas.</li>
+            <li>Es importante contar con un servicio técnico autorizado por Ferrari.</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    Ferrari: Más que un coche, es un estilo de vida.
+</footer>
+
+</body>
+</html>
